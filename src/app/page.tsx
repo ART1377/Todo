@@ -29,9 +29,6 @@ export default function Home() {
       );
     }
 
-    // return cleanUp = () => {
-
-    // }
   }, [search, todoCtx.toDos]);
 
   return (
@@ -89,7 +86,7 @@ export default function Home() {
         <div className="line w-full h-px mt-1 bg-neutral-400"></div>
       </div>
 
-      <div>
+      <div className="pb-40">
         {todoItems?.map((item) => (
           <TodoItem key={item.id} item={item} />
         ))}
